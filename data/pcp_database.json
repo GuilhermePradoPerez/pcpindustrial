@@ -1,0 +1,746 @@
+{
+  "productionOrders": [
+    {
+      "id": "op-1",
+      "code": "OP-2026-001",
+      "orderCode": "PED-2026-0001",
+      "productId": "prod-1",
+      "productName": "Flange Cego ANSI B16.5 4\" Inox 316L",
+      "productSku": "FLG-INOX-316",
+      "drawingRef": "DWG-FLG-316-04B",
+      "quantity": 60,
+      "unit": "pç",
+      "client": "Petrobras S.A. - Refinaria RPBC",
+      "priority": "alta",
+      "status": "em_producao",
+      "currentSector": "Usinagem CNC",
+      "currentStageIndex": 2,
+      "stages": [
+        {
+          "id": "s-1-1",
+          "name": "Corte e Faceamento",
+          "workCenter": "Serra Fita Franho CNC",
+          "standardMinutes": 45,
+          "status": "concluido",
+          "completedAt": "2026-10-11T16:00:00Z",
+          "operator": "Marcos Silva (Matr. 1042)"
+        },
+        {
+          "id": "s-1-2",
+          "name": "Torneamento de Desbaste",
+          "workCenter": "Torno CNC Mazak QT-200",
+          "standardMinutes": 90,
+          "status": "concluido",
+          "completedAt": "2026-10-13T11:30:00Z",
+          "operator": "Carlos Eduardo (Matr. 1088)"
+        },
+        {
+          "id": "s-1-3",
+          "name": "Furação de Centro e Passagem",
+          "workCenter": "Centro de Usinagem Romi D800",
+          "standardMinutes": 60,
+          "status": "em_andamento",
+          "operator": "Rodrigo Lima (Matr. 1105)"
+        },
+        {
+          "id": "s-1-4",
+          "name": "Usinagem de Acabamento e Face Raio",
+          "workCenter": "Torno CNC Mazak QT-200",
+          "standardMinutes": 40,
+          "status": "pendente"
+        },
+        {
+          "id": "s-1-5",
+          "name": "Inspeção Dimensional & Rugosidade",
+          "workCenter": "Tridimensional Mitutoyo Crysta",
+          "standardMinutes": 30,
+          "status": "pendente"
+        }
+      ],
+      "startDate": "2026-10-11",
+      "deadline": "2026-10-18",
+      "responsibleOperator": "Eng. Roberto Faria (PCP)",
+      "technicalNotes": "Face de assentamento Ra 3.2 a 6.3 µm com ranhura espiral fonográfica contínua.",
+      "materials": [
+        {
+          "id": "m-1",
+          "name": "Tarugo Redondo Inox 316L Ø 220mm",
+          "sku": "MAT-TAR-316-220",
+          "requiredQuantity": 69,
+          "unit": "kg",
+          "batchNumber": "LT-2610-INOX-A",
+          "allocated": true
+        },
+        {
+          "id": "m-2",
+          "name": "Fluido de Corte Semi-Sintético",
+          "sku": "INS-LUB-01",
+          "requiredQuantity": 12,
+          "unit": "L",
+          "allocated": true
+        }
+      ],
+      "qualityCheck": {
+        "approved": false
+      },
+      "scrapQuantity": 1,
+      "createdAt": "2026-10-10T14:20:00Z",
+      "updatedAt": "2026-10-13T11:30:00Z"
+    },
+    {
+      "id": "op-2",
+      "code": "OP-2026-002",
+      "orderCode": "PED-2026-0002",
+      "productId": "prod-2",
+      "productName": "Eixo Estriado de Transmissão Ø45 x 650mm",
+      "productSku": "EIX-TRANS-4340",
+      "drawingRef": "DWG-EIX-4340-65",
+      "quantity": 40,
+      "unit": "un",
+      "client": "WEG Equipamentos Elétricos S.A.",
+      "priority": "urgente",
+      "status": "em_producao",
+      "currentSector": "Tratamento Térmico",
+      "currentStageIndex": 3,
+      "stages": [
+        {
+          "id": "s-2-1",
+          "name": "Corte Inicial do Tarugo",
+          "workCenter": "Serra Fita Franho CNC",
+          "standardMinutes": 30,
+          "status": "concluido",
+          "completedAt": "2026-10-09T14:00:00Z",
+          "operator": "Marcos Silva (Matr. 1042)"
+        },
+        {
+          "id": "s-2-2",
+          "name": "Torneamento entre Pontas",
+          "workCenter": "Torno CNC Nardini Logic 175",
+          "standardMinutes": 110,
+          "status": "concluido",
+          "completedAt": "2026-10-11T17:00:00Z",
+          "operator": "José Valdir (Matr. 1030)"
+        },
+        {
+          "id": "s-2-3",
+          "name": "Fresamento de Estrias Helicoidais",
+          "workCenter": "Fresadora Geradora Fellows",
+          "standardMinutes": 85,
+          "status": "concluido",
+          "completedAt": "2026-10-13T10:00:00Z",
+          "operator": "José Valdir (Matr. 1030)"
+        },
+        {
+          "id": "s-2-4",
+          "name": "Tratamento Térmico (Têmpera & Revenimento)",
+          "workCenter": "Forno de Indução Eletrotérmico",
+          "standardMinutes": 180,
+          "status": "em_andamento",
+          "operator": "Geraldo Alencar (Matr. 1012)"
+        },
+        {
+          "id": "s-2-5",
+          "name": "Retífica Cilíndrica de Precisão",
+          "workCenter": "Retífica Cilíndrica TOS Hostivar",
+          "standardMinutes": 50,
+          "status": "pendente"
+        },
+        {
+          "id": "s-2-6",
+          "name": "Controle de Dureza Rockwell C",
+          "workCenter": "Durômetro Mitutoyo HR-530",
+          "standardMinutes": 20,
+          "status": "pendente"
+        }
+      ],
+      "startDate": "2026-10-09",
+      "deadline": "2026-10-22",
+      "responsibleOperator": "Eng. Juliana Mendes (PCP)",
+      "technicalNotes": "Dureza superficial após têmpera: 52 a 56 HRC. Núcleo com 32 a 36 HRC.",
+      "materials": [
+        {
+          "id": "m-3",
+          "name": "Barra Laminada SAE 4340 Ø 55mm",
+          "sku": "MAT-BAR-4340-55",
+          "requiredQuantity": 336,
+          "unit": "kg",
+          "batchNumber": "LT-2610-SAE4340-C",
+          "allocated": true
+        },
+        {
+          "id": "m-4",
+          "name": "Pastilha Cerâmica de Retífica",
+          "sku": "FER-RET-CBN",
+          "requiredQuantity": 4,
+          "unit": "un",
+          "allocated": true
+        }
+      ],
+      "qualityCheck": {
+        "approved": false
+      },
+      "scrapQuantity": 0,
+      "createdAt": "2026-10-08T09:00:00Z",
+      "updatedAt": "2026-10-13T10:00:00Z"
+    },
+    {
+      "id": "op-3",
+      "code": "OP-2026-003",
+      "orderCode": "PED-2026-0003",
+      "productId": "prod-3",
+      "productName": "Suporte Articulado para Célula Robótica M12",
+      "productSku": "SUP-ESTRUT-M12",
+      "drawingRef": "DWG-SUP-ROB-12",
+      "quantity": 120,
+      "unit": "cj",
+      "client": "Marcopolo Ônibus e Carrocerias",
+      "priority": "media",
+      "status": "aguardando_insumos",
+      "currentSector": "Almoxarifado",
+      "currentStageIndex": 0,
+      "stages": [
+        {
+          "id": "s-3-1",
+          "name": "Corte a Laser de Fibra 4kW",
+          "workCenter": "Laser Fibra Bodor 4020",
+          "standardMinutes": 25,
+          "status": "pendente"
+        },
+        {
+          "id": "s-3-2",
+          "name": "Dobra CNC 4 Eixos",
+          "workCenter": "Prensa Dobradeira Newton 150T",
+          "standardMinutes": 40,
+          "status": "pendente"
+        },
+        {
+          "id": "s-3-3",
+          "name": "Gabaritagem e Ponteamento",
+          "workCenter": "Bancada Modular Demmeler",
+          "standardMinutes": 35,
+          "status": "pendente"
+        },
+        {
+          "id": "s-3-4",
+          "name": "Soldagem MIG/MAG Pulsada",
+          "workCenter": "Célula Robotizada Fronius TPS/i",
+          "standardMinutes": 65,
+          "status": "pendente"
+        },
+        {
+          "id": "s-3-5",
+          "name": "Pintura Eletrostática a Pó Preto Fosco",
+          "workCenter": "Cabine de Pintura Poliéster",
+          "standardMinutes": 90,
+          "status": "pendente"
+        },
+        {
+          "id": "s-3-6",
+          "name": "Inspeção Visual de Cordão de Solda (EV/LP)",
+          "workCenter": "Bancada de CQ NDT",
+          "standardMinutes": 25,
+          "status": "pendente"
+        }
+      ],
+      "startDate": "2026-10-16",
+      "deadline": "2026-10-25",
+      "responsibleOperator": "Eng. Roberto Faria (PCP)",
+      "technicalNotes": "Aguardando entrega de arame de solda especial ER70S-6 do fornecedor Belgo.",
+      "materials": [
+        {
+          "id": "m-5",
+          "name": "Chapa Aço Carbono ASTM A36 1/4\"",
+          "sku": "MAT-CHP-A36-635",
+          "requiredQuantity": 1740,
+          "unit": "kg",
+          "batchNumber": "LT-2609-A36",
+          "allocated": true
+        },
+        {
+          "id": "m-6",
+          "name": "Arame de Solda Sólido ER70S-6 1.2mm",
+          "sku": "MAT-SOL-ER70S6",
+          "requiredQuantity": 96,
+          "unit": "kg",
+          "allocated": false
+        }
+      ],
+      "qualityCheck": {
+        "approved": false
+      },
+      "scrapQuantity": 0,
+      "createdAt": "2026-10-12T11:00:00Z",
+      "updatedAt": "2026-10-12T11:00:00Z"
+    },
+    {
+      "id": "op-4",
+      "code": "OP-2026-004",
+      "orderCode": "PED-2026-0004",
+      "productId": "prod-4",
+      "productName": "Bloco Manifold Hidráulico 4 Vias CETOP 03",
+      "productSku": "VAL-DIR-HIDR-04",
+      "drawingRef": "DWG-MNF-CTP-03",
+      "quantity": 25,
+      "unit": "pç",
+      "client": "Embraer Defesa & Segurança S.A.",
+      "priority": "alta",
+      "status": "planejada",
+      "currentSector": "Engenharia / PCP",
+      "currentStageIndex": 0,
+      "stages": [
+        {
+          "id": "s-4-1",
+          "name": "Esquadrejamento do Bloco",
+          "workCenter": "Fresa Universal Romi U30",
+          "standardMinutes": 50,
+          "status": "pendente"
+        },
+        {
+          "id": "s-4-2",
+          "name": "Usinagem de Canais e Cavidades CETOP",
+          "workCenter": "Centro de Usinagem 5 Eixos Haas VF-2SS",
+          "standardMinutes": 140,
+          "status": "pendente"
+        },
+        {
+          "id": "s-4-3",
+          "name": "Rosqueamento Rígido com Macho Rolador",
+          "workCenter": "Centro de Usinagem Haas VF-2SS",
+          "standardMinutes": 35,
+          "status": "pendente"
+        },
+        {
+          "id": "s-4-4",
+          "name": "Rebarbação Térmica e Lavagem Ultrassônica",
+          "workCenter": "Lavadora Ultrassônica Kemet",
+          "standardMinutes": 40,
+          "status": "pendente"
+        },
+        {
+          "id": "s-4-5",
+          "name": "Teste Hidrostático de Estanqueidade 350 bar",
+          "workCenter": "Bancada Hidrostática Parker",
+          "standardMinutes": 45,
+          "status": "pendente"
+        }
+      ],
+      "startDate": "2026-10-18",
+      "deadline": "2026-10-30",
+      "responsibleOperator": "Eng. Juliana Mendes (PCP)",
+      "technicalNotes": "Programa CNC pós-processado e validado em simulação Vericut.",
+      "materials": [
+        {
+          "id": "m-7",
+          "name": "Bloco de Alumínio 7075 120x120x200mm",
+          "sku": "MAT-ALU-7075-BLK",
+          "requiredQuantity": 195,
+          "unit": "kg",
+          "batchNumber": "LT-7075-AERO-09",
+          "allocated": true
+        },
+        {
+          "id": "m-8",
+          "name": "O-Rings de Vedação Viton Shore 90",
+          "sku": "VED-VIT-SH90",
+          "requiredQuantity": 200,
+          "unit": "un",
+          "allocated": true
+        }
+      ],
+      "qualityCheck": {
+        "approved": false
+      },
+      "scrapQuantity": 0,
+      "createdAt": "2026-10-13T15:30:00Z",
+      "updatedAt": "2026-10-13T15:30:00Z"
+    },
+    {
+      "id": "op-5",
+      "code": "OP-2026-005",
+      "orderCode": null,
+      "productId": "prod-1",
+      "productName": "Flange Cego ANSI B16.5 4\" Inox 316L",
+      "productSku": "FLG-INOX-316",
+      "drawingRef": "DWG-FLG-316-04B",
+      "quantity": 30,
+      "unit": "pç",
+      "client": "Estoque de Segurança / Manutenção",
+      "priority": "baixa",
+      "status": "concluida",
+      "currentSector": "Expedição",
+      "currentStageIndex": 4,
+      "stages": [
+        {
+          "id": "s-5-1",
+          "name": "Corte e Faceamento",
+          "workCenter": "Serra Fita Franho CNC",
+          "standardMinutes": 45,
+          "status": "concluido",
+          "completedAt": "2026-10-05T10:00:00Z"
+        },
+        {
+          "id": "s-5-2",
+          "name": "Torneamento de Desbaste",
+          "workCenter": "Torno CNC Mazak QT-200",
+          "standardMinutes": 90,
+          "status": "concluido",
+          "completedAt": "2026-10-06T14:00:00Z"
+        },
+        {
+          "id": "s-5-3",
+          "name": "Furação de Centro e Passagem",
+          "workCenter": "Centro de Usinagem Romi D800",
+          "standardMinutes": 60,
+          "status": "concluido",
+          "completedAt": "2026-10-07T11:00:00Z"
+        },
+        {
+          "id": "s-5-4",
+          "name": "Usinagem de Acabamento e Face Raio",
+          "workCenter": "Torno CNC Mazak QT-200",
+          "standardMinutes": 40,
+          "status": "concluido",
+          "completedAt": "2026-10-08T09:30:00Z"
+        },
+        {
+          "id": "s-5-5",
+          "name": "Inspeção Dimensional & Rugosidade",
+          "workCenter": "Tridimensional Mitutoyo Crysta",
+          "standardMinutes": 30,
+          "status": "concluido",
+          "completedAt": "2026-10-08T15:00:00Z"
+        }
+      ],
+      "startDate": "2026-10-05",
+      "deadline": "2026-10-10",
+      "completedDate": "2026-10-08T15:30:00Z",
+      "responsibleOperator": "Marcos Silva (Matr. 1042)",
+      "technicalNotes": "Lote concluído com sucesso e aprovado pelo controle de qualidade.",
+      "materials": [
+        {
+          "id": "m-9",
+          "name": "Tarugo Redondo Inox 316L Ø 220mm",
+          "sku": "MAT-TAR-316-220",
+          "requiredQuantity": 34.5,
+          "unit": "kg",
+          "batchNumber": "LT-2610-INOX-A",
+          "allocated": true
+        }
+      ],
+      "qualityCheck": {
+        "inspectorName": "Ana Paula Rocha (Inspetora CQ)",
+        "inspectedAt": "2026-10-08T15:00:00Z",
+        "approved": true,
+        "notes": "Todas as cotas críticas dentro de +/- 0,02mm. Rugosidade Ra 3.5 µm conforme DWG.",
+        "scrappedCount": 0
+      },
+      "scrapQuantity": 0,
+      "createdAt": "2026-10-04T08:00:00Z",
+      "updatedAt": "2026-10-08T15:30:00Z"
+    }
+  ],
+  "salesOrders": [
+    {
+      "id": "ord-1",
+      "orderCode": "PED-2026-0001",
+      "client": "Petrobras S.A. - Refinaria RPBC",
+      "clientDocument": "33.000.167/0001-01",
+      "productId": "prod-1",
+      "productName": "Flange Cego ANSI B16.5 4\" Inox 316L",
+      "productSku": "FLG-INOX-316",
+      "quantity": 60,
+      "unitPrice": 285.5,
+      "totalPrice": 17130,
+      "orderDate": "2026-10-02",
+      "deliveryDate": "2026-10-18",
+      "status": "em_producao",
+      "linkedOpCode": "OP-2026-001",
+      "contactEmail": "suprimentos@petrobras.com.br",
+      "contactPhone": "(13) 3362-8000",
+      "notes": "Certificado de matéria-prima 3.1 exigido conforme norma EN 10204.",
+      "createdAt": "2026-10-02T08:30:00Z"
+    },
+    {
+      "id": "ord-2",
+      "orderCode": "PED-2026-0002",
+      "client": "WEG Equipamentos Elétricos S.A.",
+      "clientDocument": "84.429.695/0001-11",
+      "productId": "prod-2",
+      "productName": "Eixo Estriado de Transmissão Ø45 x 650mm",
+      "productSku": "EIX-TRANS-4340",
+      "quantity": 40,
+      "unitPrice": 420,
+      "totalPrice": 16800,
+      "orderDate": "2026-10-04",
+      "deliveryDate": "2026-10-22",
+      "status": "em_producao",
+      "linkedOpCode": "OP-2026-002",
+      "contactEmail": "compras.motores@weg.net",
+      "contactPhone": "(47) 3276-4000",
+      "notes": "Controle rigoroso de concentricidade máxima de 0,015mm.",
+      "createdAt": "2026-10-04T10:15:00Z"
+    },
+    {
+      "id": "ord-3",
+      "orderCode": "PED-2026-0003",
+      "client": "Marcopolo Ônibus e Carrocerias",
+      "clientDocument": "88.611.835/0001-29",
+      "productId": "prod-3",
+      "productName": "Suporte Articulado para Célula Robótica M12",
+      "productSku": "SUP-ESTRUT-M12",
+      "quantity": 120,
+      "unitPrice": 135,
+      "totalPrice": 16200,
+      "orderDate": "2026-10-08",
+      "deliveryDate": "2026-10-25",
+      "status": "aberto",
+      "linkedOpCode": "OP-2026-003",
+      "contactEmail": "pcp.estruturas@marcopolo.com.br",
+      "contactPhone": "(54) 2101-4000",
+      "notes": "Acabamento em pintura epóxi fosca com camada mínima de 80 micras.",
+      "createdAt": "2026-10-08T14:00:00Z"
+    },
+    {
+      "id": "ord-4",
+      "orderCode": "PED-2026-0004",
+      "client": "Embraer Defesa & Segurança S.A.",
+      "clientDocument": "07.689.002/0001-89",
+      "productId": "prod-4",
+      "productName": "Bloco Manifold Hidráulico 4 Vias CETOP 03",
+      "productSku": "VAL-DIR-HIDR-04",
+      "quantity": 25,
+      "unitPrice": 940,
+      "totalPrice": 23500,
+      "orderDate": "2026-10-10",
+      "deliveryDate": "2026-10-30",
+      "status": "aberto",
+      "linkedOpCode": "OP-2026-004",
+      "contactEmail": "aero.compras@embraer.com.br",
+      "contactPhone": "(12) 3927-1000",
+      "notes": "Anodização dura mil-spec tipo III classe 1.",
+      "createdAt": "2026-10-10T09:20:00Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "sku": "FLG-INOX-316",
+      "name": "Flange Cego ANSI B16.5 4\" Inox 316L",
+      "category": "Flanges & Tubulação",
+      "unit": "pç",
+      "drawingNumber": "DWG-FLG-316-04B",
+      "materialSpecification": "Aço Inox Austenítico ASTM A182 F316L Forjado",
+      "standardLeadTimeDays": 4,
+      "defaultStages": [
+        {
+          "name": "Corte e Faceamento",
+          "workCenter": "Serra Fita Franho CNC",
+          "standardMinutes": 45
+        },
+        {
+          "name": "Torneamento de Desbaste",
+          "workCenter": "Torno CNC Mazak QT-200",
+          "standardMinutes": 90
+        },
+        {
+          "name": "Furação de Centro e Passagem",
+          "workCenter": "Centro de Usinagem Romi D800",
+          "standardMinutes": 60
+        },
+        {
+          "name": "Usinagem de Acabamento e Face Raio",
+          "workCenter": "Torno CNC Mazak QT-200",
+          "standardMinutes": 40
+        },
+        {
+          "name": "Inspeção Dimensional & Rugosidade",
+          "workCenter": "Tridimensional Mitutoyo Crysta",
+          "standardMinutes": 30
+        }
+      ],
+      "defaultMaterials": [
+        {
+          "name": "Tarugo Redondo Inox 316L Ø 220mm",
+          "sku": "MAT-TAR-316-220",
+          "requiredQuantity": 1.15,
+          "unit": "kg"
+        },
+        {
+          "name": "Fluido de Corte Semi-Sintético",
+          "sku": "INS-LUB-01",
+          "requiredQuantity": 0.2,
+          "unit": "L"
+        }
+      ]
+    },
+    {
+      "id": "prod-2",
+      "sku": "EIX-TRANS-4340",
+      "name": "Eixo Estriado de Transmissão Ø45 x 650mm",
+      "category": "Eixos & Transmissão",
+      "unit": "un",
+      "drawingNumber": "DWG-EIX-4340-65",
+      "materialSpecification": "Aço Cromo-Níquel-Molibdênio SAE 4340 Beneficiado",
+      "standardLeadTimeDays": 6,
+      "defaultStages": [
+        {
+          "name": "Corte Inicial do Tarugo",
+          "workCenter": "Serra FitaFranho CNC",
+          "standardMinutes": 30
+        },
+        {
+          "name": "Torneamento entre Pontas",
+          "workCenter": "Torno CNC Nardini Logic 175",
+          "standardMinutes": 110
+        },
+        {
+          "name": "Fresamento de Estrias Helicoidais",
+          "workCenter": "Fresadora Geradora Fellows",
+          "standardMinutes": 85
+        },
+        {
+          "name": "Tratamento Térmico (Têmpera & Revenimento)",
+          "workCenter": "Forno de Indução Eletrotérmico",
+          "standardMinutes": 180
+        },
+        {
+          "name": "Retífica Cilíndrica de Precisão",
+          "workCenter": "Retífica Cilíndrica TOS Hostivar",
+          "standardMinutes": 50
+        },
+        {
+          "name": "Controle de Dureza Rockwell C",
+          "workCenter": "Durômetro Mitutoyo HR-530",
+          "standardMinutes": 20
+        }
+      ],
+      "defaultMaterials": [
+        {
+          "name": "Barra Laminada SAE 4340 Ø 55mm",
+          "sku": "MAT-BAR-4340-55",
+          "requiredQuantity": 8.4,
+          "unit": "kg"
+        },
+        {
+          "name": "Pastilha Cerâmica de Retífica",
+          "sku": "FER-RET-CBN",
+          "requiredQuantity": 1,
+          "unit": "un"
+        }
+      ]
+    },
+    {
+      "id": "prod-3",
+      "sku": "SUP-ESTRUT-M12",
+      "name": "Suporte Articulado para Célula Robótica M12",
+      "category": "Caldeiraria & Solda",
+      "unit": "cj",
+      "drawingNumber": "DWG-SUP-ROB-12",
+      "materialSpecification": "Chapa de Aço Estrutural ASTM A36 6.35mm",
+      "standardLeadTimeDays": 3,
+      "defaultStages": [
+        {
+          "name": "Corte a Laser de Fibra 4kW",
+          "workCenter": "Laser Fibra Bodor 4020",
+          "standardMinutes": 25
+        },
+        {
+          "name": "Dobra CNC 4 Eixos",
+          "workCenter": "Prensa Dobradeira Newton 150T",
+          "standardMinutes": 40
+        },
+        {
+          "name": "Gabaritagem e Ponteamento",
+          "workCenter": "Bancada Modular Demmeler",
+          "standardMinutes": 35
+        },
+        {
+          "name": "Soldagem MIG/MAG Pulsada",
+          "workCenter": "Célula Robotizada Fronius TPS/i",
+          "standardMinutes": 65
+        },
+        {
+          "name": "Pintura Eletrostática a Pó Preto Fosco",
+          "workCenter": "Cabine de Pintura Poliéster",
+          "standardMinutes": 90
+        },
+        {
+          "name": "Inspeção Visual de Cordão de Solda (EV/LP)",
+          "workCenter": "Bancada de CQ NDT",
+          "standardMinutes": 25
+        }
+      ],
+      "defaultMaterials": [
+        {
+          "name": "Chapa Aço Carbono ASTM A36 1/4\"",
+          "sku": "MAT-CHP-A36-635",
+          "requiredQuantity": 14.5,
+          "unit": "kg"
+        },
+        {
+          "name": "Arame de Solda Sólido ER70S-6 1.2mm",
+          "sku": "MAT-SOL-ER70S6",
+          "requiredQuantity": 0.8,
+          "unit": "kg"
+        },
+        {
+          "name": "Tinta Eletrostática Poliéster Preto",
+          "sku": "MAT-TNT-POL-BLK",
+          "requiredQuantity": 0.35,
+          "unit": "kg"
+        }
+      ]
+    },
+    {
+      "id": "prod-4",
+      "sku": "VAL-DIR-HIDR-04",
+      "name": "Bloco Manifold Hidráulico 4 Vias CETOP 03",
+      "category": "Hidráulica Industrial",
+      "unit": "pç",
+      "drawingNumber": "DWG-MNF-CTP-03",
+      "materialSpecification": "Alumínio Aeronáutico Liga 7075-T651 Forjado",
+      "standardLeadTimeDays": 5,
+      "defaultStages": [
+        {
+          "name": "Esquadrejamento do Bloco",
+          "workCenter": "Fresa Universal Romi U30",
+          "standardMinutes": 50
+        },
+        {
+          "name": "Usinagem de Canais e Cavidades CETOP",
+          "workCenter": "Centro de Usinagem 5 Eixos Haas VF-2SS",
+          "standardMinutes": 140
+        },
+        {
+          "name": "Rosqueamento Rígido com Macho Rolador",
+          "workCenter": "Centro de Usinagem Haas VF-2SS",
+          "standardMinutes": 35
+        },
+        {
+          "name": "Rebarbação Térmica e Lavagem Ultrassônica",
+          "workCenter": "Lavadora Ultrassônica Kemet",
+          "standardMinutes": 40
+        },
+        {
+          "name": "Teste Hidrostático de Estanqueidade 350 bar",
+          "workCenter": "Bancada Hidrostática Parker",
+          "standardMinutes": 45
+        }
+      ],
+      "defaultMaterials": [
+        {
+          "name": "Bloco de Alumínio 7075 120x120x200mm",
+          "sku": "MAT-ALU-7075-BLK",
+          "requiredQuantity": 7.8,
+          "unit": "kg"
+        },
+        {
+          "name": "O-Rings de Vedação Viton Shore 90",
+          "sku": "VED-VIT-SH90",
+          "requiredQuantity": 8,
+          "unit": "un"
+        }
+      ]
+    }
+  ]
+}

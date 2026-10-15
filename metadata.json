@@ -1,0 +1,6 @@
+{
+  "name": "PCP Industrial - Gestão de Ordens de Produção e Pedidos",
+  "description": "Sistema de Planejamento e Controle da Produção com geração sequencial de OPs e Pedidos, acompanhamento em tempo real, cancelamento de ordens, ficha A4 e relatórios OTD.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
